@@ -3,7 +3,7 @@
   repo ? "esp-idf",
   # rev ? "v6.0.2",
   rev ? "8bf9c476cfa9b9cbf94189057f64fd0fe59e93d4",
-  sha256 ? "sha256-dVdJ+aUjMJyWoz+wOwA0R6XH3JRq0VBpC1sAH/aLECs=",
+  sha256 ? "sha256-NQABQEIOu3y65PMNrlr8BYqftDLjmIPG/RvMeN4LxvQ=",
   toolsToInclude ? [
     "xtensa-esp-elf-gdb"
     "riscv32-esp-elf-gdb"
