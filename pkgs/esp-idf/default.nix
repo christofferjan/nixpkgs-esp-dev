@@ -94,6 +94,10 @@ let
         rich
         psutil
 
+        esp-pylib
+        esp-idf-sbom
+        idf-drivers-gdb
+
         tree-sitter
         tree-sitter-grammars.tree-sitter-c
         argcomplete

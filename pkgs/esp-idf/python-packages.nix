@@ -337,4 +337,63 @@ rec {
       description = "Diagnostic tool for ESP-IDF";
     };
   };
+
+esp-pylib = buildPythonPackage rec {
+    pname = "esp-pylib";
+    version = "1.1.2";
+    pyproject = true;
+
+    src = fetchPypi {
+      pname = "esp_pylib";
+      inherit version;
+      hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    };
+
+    build-system = [
+      setuptools
+    ];
+
+    propagatedBuildInputs = [
+      click
+      pydantic
+      pydantic-core
+    ];
+  };
+
+  esp-idf-sbom = buildPythonPackage rec {
+    pname = "esp-idf-sbom";
+    version = "1.3.0";
+    pyproject = true;
+
+    src = fetchPypi {
+      pname = "esp_idf_sbom";
+      inherit version;
+      hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    };
+
+    build-system = [
+      setuptools
+    ];
+
+    propagatedBuildInputs = [
+      pyyaml
+      cryptography
+    ];
+  };
+
+  idf-drivers-gdb = buildPythonPackage rec {
+    pname = "idf-drivers-gdb";
+    version = "0.1.1";
+    pyproject = true;
+
+    src = fetchPypi {
+      pname = "idf_drivers_gdb";
+      inherit version;
+      hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    };
+
+    build-system = [
+      setuptools
+    ];
+  };
 }
