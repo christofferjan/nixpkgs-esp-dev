@@ -360,7 +360,7 @@ esp-pylib = buildPythonPackage rec {
     ];
   };
 
-  esp-idf-sbom = buildPythonPackage rec {
+esp-idf-sbom = buildPythonPackage rec {
     pname = "esp-idf-sbom";
     version = "1.3.0";
     pyproject = true;
@@ -378,6 +378,11 @@ esp-pylib = buildPythonPackage rec {
     propagatedBuildInputs = [
       pyyaml
       cryptography
+      schema
+      license-expression
+      rich
+      pyparsing
+      esp-pylib
     ];
   };
 
