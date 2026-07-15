@@ -94,6 +94,8 @@ let
         rich
         psutil
 
+        websockets
+
         esp-pylib
         esp-idf-sbom
         idf-drivers-gdb
