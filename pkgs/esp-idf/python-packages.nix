@@ -389,7 +389,7 @@ esp-pylib = buildPythonPackage rec {
     src = fetchPypi {
       pname = "idf_drivers_gdb";
       inherit version;
-      hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+      hash = "sha256-3Jct+5sQawuIO0G7+MPtnL7oqXNnx17uq3csVzyEVcA=";
     };
 
     build-system = [
