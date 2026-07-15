@@ -357,6 +357,7 @@ esp-pylib = buildPythonPackage rec {
       click
       pydantic
       pydantic-core
+      rich
     ];
   };
 
