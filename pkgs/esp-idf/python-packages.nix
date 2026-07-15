@@ -346,7 +346,7 @@ esp-pylib = buildPythonPackage rec {
     src = fetchPypi {
       pname = "esp_pylib";
       inherit version;
-      hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+      hash = "sha256-sl8kjrnpIm0JCzOCyL5dGIQ1kHjD6UwaMExkd6NKESM=";
     };
 
     build-system = [
